@@ -33,6 +33,9 @@ a{
 .logo{
     height: 250px;
     width: 250px;
+
+    animation-name:rollIn;
+    animation-duration: 2s;
 }
 
 
