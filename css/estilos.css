@@ -21,6 +21,7 @@ a{
 }
 
 
+
 .navBackground{
     background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
     background-size: 50%;
@@ -34,9 +35,14 @@ a{
     height: 250px;
     width: 250px;
 
+<<<<<<< HEAD
     animation-name:rollIn;
+=======
+    animation-name: rollIn;
+>>>>>>> animaciones
     animation-duration: 2s;
 }
+
 
 
 
@@ -55,6 +61,13 @@ nav ul li{ /*Modifica cada elemento de la lista del nav, los pone horizontal*/
 ul{
     list-style: none; /*Para sacar los bullets de la lista */
 }
+
+nav ul li a:hover{
+    background-color: rgb(214 183 165);
+    border-radius: 30px;
+    transition-duration: 500ms;
+}
+
 
 /*---------------------- FIN HEADER ----------------------*/
 
@@ -112,7 +125,9 @@ body{
     "grande grande chico2";
 
     gap: 10px;
+  
 }
+
 
 .imagen-inicio{
     border-radius: 10px;
@@ -120,19 +135,36 @@ body{
     justify-content: center;
 }
 
+
 .grande{
     background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
     background-size: cover;
     grid-area: grande;
-
+    
 }
 
+<<<<<<< HEAD
+=======
+.grande:hover{
+    border-radius: 30px;
+    transform: scale(105%,105%);
+    transition-duration: 1s;
+}
+
+>>>>>>> animaciones
 
 .chica1{
     background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
     background-size: cover;
     grid-area: chico1;
+    transition: all 2s;
 }
+
+.chica1:focus{
+    width: 1100px;
+}
+
+
 .chica2{
     background-image: url(../Imagenes/Productos/lemon-pie-edit.jpeg);
     background-size: cover;
@@ -155,7 +187,7 @@ body{
     padding:50px;
     border-radius: 15px;
 }
-*/
+
 
 .SeccionVideo{
     display: flex;
@@ -300,40 +332,13 @@ body{
 }
 /*----------------------  FIN FECHAS ESPECIALES ----------------------*/
 
-/*---------------------- FOOTER  ----------------------*/
-#footer{
-    
-    width: 100%;
-    background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
-    
-    color: black;
-    padding: 20px 20px;
-    background-position: right;
-    background-size: cover;
-}
-#footer h4{
-    padding: 15px;
-    font-family:'The Nautigal';
-    font-weight: bold; 
-    font-size: 40px;
-}
-#footer li{
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 5px;
-}
-
-#footer h6{
-    padding: 10px;
-}
-
-/*------------- FIN FOOTER -------------*/
 
 /*-------------  CONTACTO -------------*/
 .formulario
 {
    /* background-image: url(../Imagenes/Productos/alfajores-mani-1.jpeg) ;*/
 
+   background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
     background-size:auto;
     background-position:center;
    background-attachment: fixed; /*la imagen del fondo se mantiene fija minetras se scrollea*/
@@ -358,6 +363,49 @@ body{
     border-radius: 50px;
 }
 /*------------- FIN CONTACTO -------------*/
+
+/*-------------  NOSOTROS -------------*/
+.nosotros
+{background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+}
+
+/*------------- FIN NOSOTROS -------------*/
+
+/*---------------------- FOOTER  ----------------------*/
+#footer{
+    
+    width: 100%;
+    background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
+    
+    color: black;
+    padding: 20px 20px;
+    background-position: right;
+    background-size: cover;
+
+}
+#footer h4{
+    padding: 15px;
+    font-family:'The Nautigal';
+    font-weight: bold; 
+    font-size: 40px;
+
+    animation-name: backInLeft;
+    animation-duration: 2s;
+
+    
+}
+#footer li{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+}
+
+#footer h6{
+    padding: 10px;
+}
+
+/*------------- FIN FOOTER -------------*/
+
 
 
 /* ****************** MOVIL **************** */
