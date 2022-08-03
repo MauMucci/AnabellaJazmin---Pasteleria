@@ -35,11 +35,7 @@ a{
     height: 250px;
     width: 250px;
 
-<<<<<<< HEAD
-    animation-name:rollIn;
-=======
     animation-name: rollIn;
->>>>>>> animaciones
     animation-duration: 2s;
 }
 
@@ -143,15 +139,11 @@ body{
     
 }
 
-<<<<<<< HEAD
-=======
 .grande:hover{
     border-radius: 30px;
     transform: scale(105%,105%);
     transition-duration: 1s;
 }
-
->>>>>>> animaciones
 
 .chica1{
     background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
