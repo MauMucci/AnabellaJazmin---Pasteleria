@@ -191,6 +191,17 @@ body{
     height: 550px;
 }
 
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+  }
 /*---------------------- FIN INDEX ----------------------*/
 
 /*---------------------- PRODUCTOS ----------------------*/
@@ -206,6 +217,7 @@ body{
     height: 300px;
     width: 300px;
 }
+
 
 .tortas-clasicas{
     display: grid;
@@ -299,6 +311,15 @@ body{
 .fechas-especiales{
     display: grid;
     justify-items: center;
+}
+.btn-primary{
+    --bs-btn-color: white;
+    --bs-btn-bg:rgb(89 53 33);
+    --bs-btn-border-color:black;
+    --bs-btn-hover-border-color:pink;
+    --bs-btn-hover-bg: thistle;
+    margin-top: 20px;
+
 }
 
 .boxes-fechas-especiales{
