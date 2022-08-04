@@ -1,3 +1,29 @@
+//Variables
+
+$background: red;
+
+body{
+    background-color: $background;
+}
+
+header{
+    nav{
+        ul{
+            li{
+                a{
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 @font-face {
     font-family: 'The Nautigal', cursive;
     
@@ -563,4 +589,20 @@ body{
   /*NOSOTROS*/
     /*FIN NOSOTROS*/
   
+}
+
+{
+
+
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "files.autoSave": "afterDelay",
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "savePathReplacementPairs": null
+        }
+    ]
 }
