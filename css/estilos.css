@@ -340,9 +340,14 @@ body{
     justify-items: center;
 }
 
+.cartas-fechas{
+    display: flex;
+}
+
 .btn-primary{
     font-size: x-large;
     margin-top: 10px;
+    margin-bottom: 30px;
     color:black;
     background-color:rgb(254,122,152,0.81) ;
     border-color: white ;
