@@ -1,45 +1,50 @@
+@charset "UTF-8";
+body {
+  background-color: blue;
+}
+
+h1, h2 {
+  background-color: thistle;
+  color: black;
+  font-family: "Roboto";
+}
+
 @font-face {
-    font-family: 'The Nautigal', cursive;
-    
-    src: url('/assets/fonts/Roboto/The_Nautigal/');
+  font-family: "The Nautigal", cursive;
+  src: url("/assets/fonts/Roboto/The_Nautigal/");
 }
-
-
 /*---------------------- SELECTOR UNIVERSAL  ----------------------*/
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 /*----------------------  FIN SELECTOR UNIVERSAL ----------------------*/
-
 /*----------------------  HEADER ----------------------*/
-a{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(89 53 33);
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(89, 53, 33);
 }
 
-
-
-.navBackground{
-    background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
-    background-size: 50%;
-    background-size: cover;
-    font-family:'The Nautigal';
-    font-size: 30px;
-    color: rgb(0, 0, 0);
+.navBackground {
+  background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
+  background-size: 50%;
+  background-size: cover;
+  font-family: "The Nautigal";
+  font-size: 30px;
+  color: rgb(0, 0, 0);
 }
 
-.logo{
-    height: 250px;
-    width: 250px;
-
-    animation-name: rollIn;
-    animation-duration: 2s;
+.logo {
+  height: 250px;
+  width: 250px;
+  -webkit-animation-name: rollIn;
+          animation-name: rollIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
-
-
 
 /*
 nav ul{    
@@ -47,359 +52,305 @@ nav ul{
     justify-content: space-around;
     list-style: none;
     background-color: thistle;
-    
+
 }*/
-
-nav ul li{ /*Modifica cada elemento de la lista del nav, los pone horizontal*/
-    font-size: 50px;
+nav ul li { /*Modifica cada elemento de la lista del nav, los pone horizontal*/
+  font-size: 50px;
 }
 
-ul{
-    list-style: none; /*Para sacar los bullets de la lista */
+ul {
+  list-style: none; /*Para sacar los bullets de la lista */
 }
 
-nav ul li a:hover{
-    background-color: rgb(214 183 165);
-    border-radius: 30px;
-    transition-duration: 500ms;
+nav ul li a:hover {
+  background-color: rgb(214, 183, 165);
+  border-radius: 30px;
+  transition-duration: 500ms;
 }
-
 
 /*---------------------- FIN HEADER ----------------------*/
-
 /*----------------------  TITULOS ----------------------*/
-h1{
-    background-color:thistle;
-    display: flex;
-    justify-content: center;
-    text-emphasis:initial;
-    font-family: 'Roboto';
-    color: black;
-    font-size: 50px;
-    margin-top: 40px;
-    width: 100%;
-    
+h1 {
+  background-color: thistle;
+  display: flex;
+  justify-content: center;
+  -webkit-text-emphasis: initial;
+          text-emphasis: initial;
+  font-family: "Roboto";
+  color: black;
+  font-size: 50px;
+  margin-top: 40px;
+  width: 100%;
 }
 
-h2{
-    text-emphasis:initial;
-    font-family: 'Roboto';
-    color: black;
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
+h2 {
+  -webkit-text-emphasis: initial;
+          text-emphasis: initial;
+  font-family: "Roboto";
+  color: black;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*---------------------- FIN TITULOS ----------------------*/
-
-
 /*---------------------- INDEX ----------------------*/
 /* Body Index */
-body{
-    background-color: rgb(254 212 215);
-    font-family: "Roboto", Sans-serif;
+body {
+  background-color: rgb(254, 212, 215);
+  font-family: "Roboto", Sans-serif;
 }
 
-.navbar{
-    font-family:"The Nautigal" ;
+.navbar {
+  font-family: "The Nautigal";
 }
 
 .navbar-expand-lg .navbar-collapse {
-    justify-content: center;
-    background-color: cornsilk;
-    border-radius: 10px;
-    
+  justify-content: center;
+  background-color: cornsilk;
+  border-radius: 10px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
-    color: black;
-    border: #d6b7a5 1px solid;
-    border-radius: 70px;
-    height: 50px;
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: black;
+  border: #d6b7a5 1px solid;
+  border-radius: 70px;
+  height: 50px;
 }
 
-.nav-link{
-    display: flex;
-    justify-items: center;
-    align-items: center;
+.nav-link {
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
-.banner{
-    background-image:url(../Imagenes/Productos/alfajores-mani-1.jpeg);
-    background-position: center;
-    background-attachment: fixed; /*La imagen se mueve con el scroll*/
-    background-size: cover;
-    width: 100%;
-    height: 500px;
+.banner {
+  background-image: url(../Imagenes/Productos/alfajores-mani-1.jpeg);
+  background-position: center;
+  background-attachment: fixed; /*La imagen se mueve con el scroll*/
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }
 
-.galeria-inicio{
-    height: 800px;
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    grid-template-rows: repeat(2,2fr);
-    margin: 50px;
-
-    grid-template-areas:
-    "grande grande chico1"
-    "grande grande chico2";
-
-    gap: 10px;
-  
+.galeria-inicio {
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  margin: 50px;
+  grid-template-areas: "grande grande chico1" "grande grande chico2";
+  gap: 10px;
 }
 
-
-.imagen-inicio{
-    border-radius: 10px;
-    display: grid;
-    justify-content: center;
+.imagen-inicio {
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
 }
 
-
-.grande{
-    background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
-    background-size: cover;
-    grid-area: grande;
-    
+.grande {
+  background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
+  background-size: cover;
+  grid-area: grande;
 }
 
-.grande:hover{
-    border-radius: 30px;
-    transform: scale(105%,105%);
-    transition-duration: 1s;
+.grande:hover {
+  border-radius: 30px;
+  transform: scale(105%, 105%);
+  transition-duration: 1s;
 }
 
-.chica1{
-    background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
-    background-size: cover;
-    grid-area: chico1;
-    transition: all 2s;
+.chica1 {
+  background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
+  background-size: cover;
+  grid-area: chico1;
+  transition: all 2s;
 }
 
-.chica1:focus{
-    width: 1100px;
+.chica1:focus {
+  width: 1100px;
 }
 
-
-.chica2{
-    background-image: url(../Imagenes/Productos/lemon-pie-edit.jpeg);
-    background-size: cover;
-    grid-area: chico2;
+.chica2 {
+  background-image: url(../Imagenes/Productos/lemon-pie-edit.jpeg);
+  background-size: cover;
+  grid-area: chico2;
 }
 
-
-
-.TituloTabla{
-    font-family:'The Nautigal';
-    font-size: 50px;
+.TituloTabla {
+  font-family: "The Nautigal";
+  font-size: 50px;
 }
 
-
-.DiseñoTabla{
-    background-color:wheat;
-    border: 10px;
-    border-style: double;
-    border-color: black;
-    padding:50px;
-    border-radius: 15px;
+.DiseñoTabla {
+  background-color: wheat;
+  border: 10px;
+  border-style: double;
+  border-color: black;
+  padding: 50px;
+  border-radius: 15px;
 }
 
-
-.SeccionVideo{
-    display: flex;
-    flex-direction: column;
+.SeccionVideo {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.video1{
-    height: 550px;
+.video1 {
+  height: 550px;
 }
-
 
 .carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform 0.6s ease-in-out;
-  }
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
 /*---------------------- FIN INDEX ----------------------*/
-
 /*---------------------- PRODUCTOS ----------------------*/
-
-.productos{
-    display: grid;
-    justify-items: center;
-    margin-top: 50px;
+.productos {
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
 }
 
-
-.tortas-clasicas{
-    display: grid;
-    height: 600px;
-    width: 600px;
-
-    margin-bottom: 60px;
-    margin-left: 60px;
-
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(2,2fr);
-
-    justify-content: center;
-    align-content: center;
-   
-    gap: 10px;
+.tortas-clasicas {
+  display: grid;
+  height: 600px;
+  width: 600px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
-.card{
-    --bs-card-bg:#fff8dc;
+.card {
+  --bs-card-bg:#fff8dc;
 }
+
 .card-title {
-    font-size: xx-large;
-    font-weight: bold;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
-
-.tiny-cakes{
-    display: grid;
-   
-    height: 300px;
-    width: 600px;
-
-    margin-bottom: 60px;
-    margin-left: 60px;
-
-    grid-template-columns: repeat(2,2fr);
-
-    justify-content: center;
-    align-content: center;
-   
-    gap: 10px;
+.tiny-cakes {
+  display: grid;
+  height: 300px;
+  width: 600px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  grid-template-columns: repeat(2, 2fr);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
-.individuales{
-    display: grid;
-   
-    height: 600px;
-    width: 600px;
-
-    margin-bottom: 60px;
-    margin-left: 60px;
-
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(2,2fr);
-
-    justify-content: center;
-    align-content: center;
-   
-    gap: 10px;
+.individuales {
+  display: grid;
+  height: 600px;
+  width: 600px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
-.letter-cakes{
-    display: grid;
-   
-    height: 300px;
-    width: 600px;
-
-    margin-bottom: 60px;
-    margin-left: 60px;
-
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);
-
-    justify-content: center;
-    align-content: center;
+.letter-cakes {
+  display: grid;
+  height: 300px;
+  width: 600px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+  align-content: center;
 }
 
-.boxes{
-    display: grid;
-   
-    height: 600px;
-    width: 600px;
-
-    margin-bottom: 60px;
-    margin-left: 60px;
-
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
+.boxes {
+  display: grid;
+  height: 600px;
+  width: 600px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
 /*---------------------- FIN PRODUCTOS ----------------------*/
-
 /*----------------------  FECHAS ESPECIALES ----------------------*/
-.fechas-especiales{
-    display: grid;
-    justify-items: center;
+.fechas-especiales {
+  display: grid;
+  justify-items: center;
 }
 
-.cartas-fechas{
-    display: flex;
+.cartas-fechas {
+  display: flex;
 }
 
-.btn-primary{
-    font-size: x-large;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color:black;
-    background-color:rgb(254,122,152,0.81) ;
-    border-color: white ;
-    --bs-btn-hover-bg:rgba(255,206,134,1);
-    --bs-btn-hover-border-color:yellow;
+.btn-primary {
+  font-size: x-large;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: black;
+  background-color: rgba(254, 122, 152, 0.81);
+  border-color: white;
+  --bs-btn-hover-bg:rgba(255,206,134,1);
+  --bs-btn-hover-border-color:yellow;
 }
 
-.boxes-fechas-especiales{
-    display: grid;
-    height: 1000px;
-    width: 90%;
-
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(2,2fr);
-
-    margin-left: 60px;
-    margin-bottom: 60px;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-
+.boxes-fechas-especiales {
+  display: grid;
+  height: 1000px;
+  width: 90%;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  margin-left: 60px;
+  margin-bottom: 60px;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
 }
 
-
-.boxes-fechas-especiales img{
-    height: 500px;
-    width: 500px;
-    border-radius: 10px;
+.boxes-fechas-especiales img {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
 }
+
 /*----------------------  FIN FECHAS ESPECIALES ----------------------*/
-
-
 /*-------------  CONTACTO -------------*/
-.formulario
-{
-   /* background-image: url(../Imagenes/Productos/alfajores-mani-1.jpeg) ;*/
-
-   background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
-    background-size:auto;
-    background-position:center;
-   background-attachment: fixed; /*la imagen del fondo se mantiene fija minetras se scrollea*/
-    font-family:'Roboto';
-    font-size: 30px;
-}
-.formulario legend{
-    background-color: #f08a36bd;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 25px;
-    
+.formulario {
+  /* background-image: url(../Imagenes/Productos/alfajores-mani-1.jpeg) ;*/
+  background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgb(255, 206, 134) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed; /*la imagen del fondo se mantiene fija minetras se scrollea*/
+  font-family: "Roboto";
+  font-size: 30px;
 }
 
+.formulario legend {
+  background-color: rgba(240, 138, 54, 0.7411764706);
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 25px;
+}
 
 /* .boton{
     background-color: black;
@@ -409,210 +360,160 @@ body{
     padding: 10px;
     border-radius: 50px;
 } */
-
-
-
-
 /*------------- FIN CONTACTO -------------*/
-
 /*-------------  NOSOTROS -------------*/
-.nosotros
-{background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+.nosotros {
+  background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgb(255, 206, 134) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
 }
-
 
 /*------------- FIN NOSOTROS -------------*/
-
 /*---------------------- FOOTER  ----------------------*/
-#footer{
-    
-    width: 100%;
-    background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
-    
-    color: black;
-    padding: 20px 20px;
-    background-position: right;
-    background-size: cover;
-
-}
-#footer h4{
-    padding: 15px;
-    font-family:'The Nautigal';
-    font-weight: bold; 
-    font-size: 40px;
-
-    animation-name: backInLeft;
-    animation-duration: 2s;
-
-    
-}
-#footer li{
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 5px;
+#footer {
+  width: 100%;
+  background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
+  color: black;
+  padding: 20px 20px;
+  background-position: right;
+  background-size: cover;
 }
 
-#footer h6{
-    padding: 10px;
+#footer h4 {
+  padding: 15px;
+  font-family: "The Nautigal";
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-animation-name: backInLeft;
+          animation-name: backInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#footer li {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px;
+}
+
+#footer h6 {
+  padding: 10px;
 }
 
 /*------------- FIN FOOTER -------------*/
-
-
-
 /* ****************** MOVIL **************** */
-@media only screen and (max-width: 320px){
-
-    nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #footer{
-        padding: 0%;
-    }
-
-    /*INICIO*/
-    .banner{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-    .galeria-inicio{
-
-        height: auto;
-        grid-template-columns: 90%;
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas:
-        "grande"
-        "chico1"
-        "chico2";
-        margin-left: 10%;
-    }
-
-    .grande{
-        height: 250px;
-        width: 250px;
-    }
-
-    .chica1{
-        height: 250px;
-        width: 250px;
-    }
-    .chica2{
-        height: 250px;
-        width: 250px;
-    }
-
-    /* FIN INICIO */
-
-
-    /*PRODUCTOS RESPONSIVE*/
-   /*  h1{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: x-large;
-    } */
-
-
-    .productos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tortas-clasicas{
+@media only screen and (max-width: 320px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer {
+    padding: 0%;
+  }
+  /*INICIO*/
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .galeria-inicio {
+    height: auto;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "grande" "chico1" "chico2";
+    margin-left: 10%;
+  }
+  .grande {
+    height: 250px;
+    width: 250px;
+  }
+  .chica1 {
+    height: 250px;
+    width: 250px;
+  }
+  .chica2 {
+    height: 250px;
+    width: 250px;
+  }
+  /* FIN INICIO */
+  /*PRODUCTOS RESPONSIVE*/
+  /*  h1{
+       display: flex;
+       flex-wrap: wrap;
+       font-size: x-large;
+   } */
+  .productos {
+    display: flex;
+    flex-direction: column;
+  }
+  .tortas-clasicas {
     height: auto;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(4,1fr);
-    }
-
-    .tiny-cakes{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .tiny-cakes {
     height: auto;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
-    }
-
-    .individuales{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .individuales {
     height: auto;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
-    }
-
-    .letter-cakes{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .letter-cakes {
     height: auto;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);
-    }
-
-    .boxes{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .boxes {
     height: auto;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);
-    }
-
-    /* FIN PRODUCTOS*/
-
-    /*FECHAS ESPECIALES*/
-    .btn btn-primary{
-        background-color: aqua;
-    }
-
-.btn{
-    color:yellow;
-}
-    .btn-primary{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  /* FIN PRODUCTOS*/
+  /*FECHAS ESPECIALES*/
+  .btn btn-primary {
+    background-color: aqua;
+  }
+  .btn {
+    color: yellow;
+  }
+  .btn-primary {
     --bs-btn-bg: pink;
     --bs-btn-bg:black;
     background-color: red;
-
-    }
-
-    .fechas-especiales h2{
-        display: flex;
-        flex-direction: column;
-        font-size: 40px;
-    }
-
-    .boxes-fechas-especiales{
+  }
+  .fechas-especiales h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+  }
+  .boxes-fechas-especiales {
     height: auto;
     width: auto;
     margin-left: 10%;
-
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(4,1fr);
-
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     margin-left: 0%;
-
-    }
-
-    .boxes-fechas-especiales img{
-        height: 250px;
-        width: 250px;
-    }
+  }
+  .boxes-fechas-especiales img {
+    height: 250px;
+    width: 250px;
+  }
   /* FIN FECHAS ESPECIALES*/
-
   /*NOSOTROS*/
-    /*FIN NOSOTROS*/
-  
-}
+  /*FIN NOSOTROS*/
+}/*# sourceMappingURL=estilos.css.map */
