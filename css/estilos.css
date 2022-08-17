@@ -21,15 +21,15 @@ h1, h2 {
 
 /*----------------------  FIN SELECTOR UNIVERSAL ----------------------*/
 /*----------------------  HEADER ----------------------*/
-a {
+
+.cabecera{
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: rgb(89, 53, 33);
+  background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
 }
 
+
 .navBackground {
-  background-image: url(../Imagenes/Patrones/decorativo-rosa.webp);
   background-size: 50%;
   background-size: cover;
   font-family: "The Nautigal";
@@ -335,6 +335,7 @@ body {
 
 /*----------------------  FIN FECHAS ESPECIALES ----------------------*/
 /*-------------  CONTACTO -------------*/
+
 .formulario {
   /* background-image: url(../Imagenes/Productos/alfajores-mani-1.jpeg) ;*/
   background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgb(255, 206, 134) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
@@ -352,18 +353,25 @@ body {
   font-size: 25px;
 }
 
-/* .boton{
-    background-color: black;
-    font-family: 'calibri';
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50px;
-} */
+label {
+  display: flex;
+  justify-content: space-around;
+}
 /*------------- FIN CONTACTO -------------*/
 /*-------------  NOSOTROS -------------*/
 .nosotros {
   background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgb(255, 206, 134) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+}
+
+.combobox-consultas{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.comentarios{
+  display: flex;
+  flex-direction: column;
 }
 
 /*------------- FIN NOSOTROS -------------*/
@@ -400,7 +408,8 @@ body {
 
 /*------------- FIN FOOTER -------------*/
 /* ****************** MOVIL **************** */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
+
   nav ul {
     display: flex;
     flex-direction: column;
@@ -433,12 +442,9 @@ body {
     width: 250px;
   }
   /* FIN INICIO */
+
   /*PRODUCTOS RESPONSIVE*/
-  /*  h1{
-       display: flex;
-       flex-wrap: wrap;
-       font-size: x-large;
-   } */
+
   .productos {
     display: flex;
     flex-direction: column;
@@ -484,18 +490,10 @@ body {
     grid-template-rows: repeat(1, 1fr);
   }
   /* FIN PRODUCTOS*/
+
   /*FECHAS ESPECIALES*/
-  .btn btn-primary {
-    background-color: aqua;
-  }
-  .btn {
-    color: yellow;
-  }
-  .btn-primary {
-    --bs-btn-bg: pink;
-    --bs-btn-bg:black;
-    background-color: red;
-  }
+
+ 
   .fechas-especiales h2 {
     display: flex;
     flex-direction: column;
@@ -514,6 +512,38 @@ body {
     width: 250px;
   }
   /* FIN FECHAS ESPECIALES*/
+  
   /*NOSOTROS*/
   /*FIN NOSOTROS*/
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+@media (max-width: 768px) {
+
+  /*INICIO*/
+  .galeria-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-inicio{
+    height: 500px;
+    width: 90%;
+  }
+ 
+  /*   PRODUCTOS */
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    margin-top: 10px;
+  }
+
+ /*  FECHAS ESPECIALES */
+ 
+ .cartas-fechas{
+  flex-direction: column;
+  align-items: center;
+ }
+
+}

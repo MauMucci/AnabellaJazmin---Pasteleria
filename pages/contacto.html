@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../AnabellaJazmin - Pasteleria/Logo.jpeg">
+        <link rel="shortcut icon" href="../Imagenes/Logos/Logo-redondo-marco-pastel-sin-fondo.png">
         <title>Contacto</title>   
 
         <!--Libreria para animaciones-->
@@ -36,10 +36,13 @@
     <body>
 
       <header class="navBackground">
+
+        <div class="cabecera">
           <a href="../index.html">
               <img class= "logo" src="../Imagenes/Logos/Logo-redondo-marco-pastel-sin-fondo.png" alt="logo-anabella" >
           </a>
-        </nav> 
+        </div>
+
           <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"></a>
@@ -73,7 +76,6 @@
         
 
 <div class="container-fluid">
-  
 
         <form class=formulario action="procesar.php" name="contacto" method="post"> 
             <fieldset>
@@ -108,36 +110,20 @@
 
                 
                 <!--Menu desplegable-->
-                <h4>¿Sobre qué nos querés consultar?</h4>
-                <select name="consultas">
-                    <option value="Regalos">Regalos sorpresa</option>
-                    <option value="mayorista">Venta Mayorista</option>
-                    <option value="paquetes">Paquetes</option>
-                </select>
-
-                <!--Checkbox-->
-                <h4>Arma tu carrito</h4>
-                <p>
-                    <label for ="carrito">Brownie de chocolate</label>
-                    <input type ="checkbox" name="carrito" value="brownie de chocolate">
-                </p>
-                <p>
-                    <label for ="carrito">Lemon Pie</label>
-                    <input type ="checkbox" name="carrito" value="lemon pie">
-                </p>
-                <p>
-                    <label for ="carrito">Sandwich de jamon y queso </label>
-                    <input type="checkbox" name = carrito value="sandwich de jamon y queso">
-                </p>
-                <p>
-                    <label for ="carrito">Scones de queso rellenos </label>
-                    <input type="checkbox" name = carrito value="scones de queso rellenos">
-                </p>
+                <div class="combobox-consultas"><h4>¿Sobre qué nos querés consultar?</h4>
+                  <select name="consultas">
+                      <option value="Regalos">Regalos sorpresa</option>
+                      <option value="mayorista">Venta Mayorista</option>
+                      <option value="paquetes">Paquetes</option>
+                  </select>
+                </div>
+              
 
                 <!--Espacio para comentarios-->
-                <h4>¡Dejanos tus comentarios!</h4>
-                <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-    
+                <div class="comentarios"><h4>¡Dejanos tus comentarios!</h4>
+                  <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                </div>
+
                 <div class="d-grid gap-2 col-6 mx-auto">
                   <button class="btn btn-primary" type="button">Enviar</button>
                   <button class="btn btn-primary" type="button">Borrar formulario</button>
