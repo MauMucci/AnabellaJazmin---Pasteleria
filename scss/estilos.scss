@@ -2,16 +2,46 @@
 @import "_fonts.scss";
 
 //variables
-body{
+/* body{
     background-color: blue;
-}
+} */
 
-h1, h2{
+/* h1, h2{
     background-color: $colorTitulos;
-    color:black;
     font-family: "Roboto";
 }
+ */
 
+
+//Maps
+$font-titulo:(
+    color:green,
+    tFuente: 50px,
+    color-fondo:yellow,
+);
+
+h1{
+    background-color: map-get($map: $font-titulo, $key: color-fondo );
+    color:map-get($map: $font-titulo, $key:color );
+}
+
+//Extend
+.productos{
+    @extend .galeria-inicio;
+    background-color: green;
+}
+
+
+//Mixins
+@mixin fondoImagen(){
+    box-shadow: 0px 0px 5px black;
+}
+
+.imagen-inicio{
+@include fondoImagen();
+}
+
+/*-------------- FIN SASS -------------*/
 
 
 @font-face {
@@ -85,12 +115,10 @@ nav ul li a:hover{
 
 /*----------------------  TITULOS ----------------------*/
 h1{
-    background-color:thistle;
     display: flex;
     justify-content: center;
     text-emphasis:initial;
     font-family: 'Roboto';
-    color: black;
     font-size: 50px;
     margin-top: 40px;
     width: 100%;
