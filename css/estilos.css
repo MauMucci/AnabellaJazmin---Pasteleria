@@ -149,17 +149,19 @@ body {
   justify-content: center;
 }
 
+.imagen-inicio:hover {
+  border-radius: 30px;
+  transform: scale(105%, 105%);
+  transition-duration: 1s;
+}
+
 .grande {
   background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
   background-size: cover;
   grid-area: grande;
 }
 
-.grande:hover {
-  border-radius: 30px;
-  transform: scale(105%, 105%);
-  transition-duration: 1s;
-}
+
 
 .chica1 {
   background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
@@ -173,7 +175,7 @@ body {
 }
 
 .chica2 {
-  background-image: url(../Imagenes/Productos/lemon-pie-edit.jpeg);
+  background-image: url(../Imagenes/Productos/Chocotorta-con-franui-edit.jpeg);
   background-size: cover;
   grid-area: chico2;
 }
