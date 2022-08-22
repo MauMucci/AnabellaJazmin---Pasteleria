@@ -10,18 +10,7 @@ $font-titulo:(
     color-fondo:$colorPrincipal,
 );
 
-h1{
-    
-    background-color: map-get($map: $font-titulo, $key: color-fondo );
-    color:map-get($map: $font-titulo, $key:color );
-}
 
-/* //Extend
-.productos{
-    @extend .galeria-inicio;
-    background-color: green;
-}
- */
 
 //Mixins
 @mixin fondoImagen(){
@@ -36,6 +25,7 @@ h1{
     color:black;
     font-size: $tamañoFuenteH1;
     background-color: $colorPrincipal;
+    font-weight: bold;
 }
 
 .h1{
