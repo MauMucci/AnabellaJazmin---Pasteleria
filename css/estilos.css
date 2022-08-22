@@ -1,23 +1,23 @@
 @charset "UTF-8";
-/* body{
-    background-color: blue;
-} */
-/* h1, h2{
-    background-color: $colorTitulos;
-    font-family: "Roboto";
+h1 {
+  background-color: rgb(254, 212, 215);
+  color: black;
+}
+
+/* //Extend
+.productos{
+    @extend .galeria-inicio;
+    background-color: green;
 }
  */
-h1 {
-  background-color: yellow;
-  color: green;
-}
-
-.productos {
-  background-color: green;
-}
-
 .imagen-inicio {
   box-shadow: 0px 0px 5px black;
+}
+
+.h1 {
+  color: black;
+  font-size: 50px;
+  background-color: rgb(254, 212, 215);
 }
 
 /*-------------- FIN SASS -------------*/
@@ -143,7 +143,7 @@ body {
   height: 500px;
 }
 
-.galeria-inicio, .productos {
+.galeria-inicio {
   height: 800px;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -423,7 +423,7 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  .galeria-inicio, .productos {
+  .galeria-inicio {
     height: auto;
     grid-template-columns: 90%;
     grid-template-rows: repeat(3, auto);

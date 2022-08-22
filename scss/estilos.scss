@@ -2,35 +2,26 @@
 @import "_fonts.scss";
 
 //variables
-/* body{
-    background-color: blue;
-} */
-
-/* h1, h2{
-    background-color: $colorTitulos;
-    font-family: "Roboto";
-}
- */
-
 
 //Maps
 $font-titulo:(
-    color:green,
+    color:black,
     tFuente: 50px,
-    color-fondo:yellow,
+    color-fondo:$colorPrincipal,
 );
 
 h1{
+    
     background-color: map-get($map: $font-titulo, $key: color-fondo );
     color:map-get($map: $font-titulo, $key:color );
 }
 
-//Extend
+/* //Extend
 .productos{
     @extend .galeria-inicio;
     background-color: green;
 }
-
+ */
 
 //Mixins
 @mixin fondoImagen(){
@@ -38,8 +29,22 @@ h1{
 }
 
 .imagen-inicio{
-@include fondoImagen();
+    @include fondoImagen();
+    }
+
+@mixin titulo-h1 {
+    color:black;
+    font-size: $tamañoFuenteH1;
+    background-color: $colorPrincipal;
 }
+
+.h1{
+    @include titulo-h1();
+}
+
+
+
+
 
 /*-------------- FIN SASS -------------*/
 
