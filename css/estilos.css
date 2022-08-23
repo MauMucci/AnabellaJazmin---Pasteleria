@@ -6,7 +6,7 @@
 h1 {
   color: black;
   font-size: 50px;
-  background-color: rgb(254, 212, 215);
+  background-color: rgb(230 219 213);
   font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ h2 {
 /*---------------------- INDEX ----------------------*/
 /* Body Index */
 body {
-  background-color: rgb(254, 212, 215);
+  background-color: rgb(214 183 165);
   font-family: "Roboto", Sans-serif;
 }
 
@@ -149,19 +149,17 @@ body {
   justify-content: center;
 }
 
-.imagen-inicio:hover {
-  border-radius: 30px;
-  transform: scale(105%, 105%);
-  transition-duration: 1s;
-}
-
 .grande {
   background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
   background-size: cover;
   grid-area: grande;
 }
 
-
+.grande:hover {
+  border-radius: 30px;
+  transform: scale(105%, 105%);
+  transition-duration: 1s;
+}
 
 .chica1 {
   background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
@@ -175,7 +173,7 @@ body {
 }
 
 .chica2 {
-  background-image: url(../Imagenes/Productos/Chocotorta-con-franui-edit.jpeg);
+  background-image: url(../Imagenes/Productos/lemon-pie-edit.jpeg);
   background-size: cover;
   grid-area: chico2;
 }
@@ -338,13 +336,16 @@ body {
 /*----------------------  FIN FECHAS ESPECIALES ----------------------*/
 /*-------------  CONTACTO -------------*/
 .formulario {
-  /* background-image: url(../Imagenes/Productos/alfajores-mani-1.jpeg) ;*/
-  background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgb(255, 206, 134) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(64.3deg, rgb(214 183 165) 17.7%, rgb(255, 206, 134) 64.7%, rgb(230 219 213) 112.1%);
   background-size: auto;
   background-position: center;
   background-attachment: fixed; /*la imagen del fondo se mantiene fija minetras se scrollea*/
   font-family: "Roboto";
   font-size: 30px;
+  
 }
 
 .formulario legend {
@@ -401,8 +402,8 @@ body {
 }
 
 /*------------- FIN FOOTER -------------*/
-/* ****************** MOVIL **************** */
-@media only screen and (max-width: 320px) {
+/* ****************** MOVIL 768px **************** */
+@media only screen and (max-width: 768px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -417,30 +418,21 @@ body {
   }
   .galeria-inicio {
     height: auto;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "grande" "chico1" "chico2";
     margin-left: 10%;
   }
-  .grande {
-    height: 250px;
-    width: 250px;
+  .grande,.chica1,.chica2 {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .chica1 {
-    height: 250px;
-    width: 250px;
-  }
-  .chica2 {
-    height: 250px;
-    width: 250px;
-  }
+ 
+  
   /* FIN INICIO */
   /*PRODUCTOS RESPONSIVE*/
-  /*  h1{
-       display: flex;
-       flex-wrap: wrap;
-       font-size: x-large;
-   } */
+
   .productos {
     display: flex;
     flex-direction: column;
@@ -486,23 +478,14 @@ body {
     grid-template-rows: repeat(1, 1fr);
   }
   /* FIN PRODUCTOS*/
-  /*FECHAS ESPECIALES*/
-  .btn btn-primary {
-    background-color: aqua;
-  }
-  .btn {
-    color: yellow;
-  }
-  .btn-primary {
-    --bs-btn-bg: pink;
-    --bs-btn-bg:black;
-    background-color: red;
-  }
+  /*FECHAS ESPECIALES RESPONSIVE*/
+  
   .fechas-especiales h2 {
     display: flex;
     flex-direction: column;
     font-size: 40px;
   }
+
   .boxes-fechas-especiales {
     height: auto;
     width: auto;
@@ -515,7 +498,33 @@ body {
     height: 250px;
     width: 250px;
   }
+  .cartas-fechas{
+    flex-direction: column;
+  }
+}
   /* FIN FECHAS ESPECIALES*/
   /*NOSOTROS*/
   /*FIN NOSOTROS*/
-}/*# sourceMappingURL=estilos.css.map */
+
+/*************MOVIL 320px ***********/
+@media (max-width: 320px)
+{
+  /*INICIO*/
+  .galeria-inicio {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "grande" "chico1" "chico2";
+    margin-left: 10%;
+  }
+  .grande,.chica1,.chica2 {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */
