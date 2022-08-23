@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .imagen-inicio {
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 15px black;
 }
 
 h1 {
@@ -48,14 +48,6 @@ a {
           animation-duration: 2s;
 }
 
-/*
-nav ul{    
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    background-color: thistle;
-
-}*/
 nav ul li { /*Modifica cada elemento de la lista del nav, los pone horizontal*/
   font-size: 50px;
 }
@@ -70,6 +62,11 @@ nav ul li a:hover {
   transition-duration: 500ms;
 }
 
+
+.bg-light{
+  --bs-bg-opacity: 0;
+}
+
 /*---------------------- FIN HEADER ----------------------*/
 /*----------------------  TITULOS ----------------------*/
 h1 {
@@ -81,6 +78,7 @@ h1 {
   font-size: 50px;
   margin-top: 40px;
   width: 100%;
+  box-shadow: 0px 0px 10px black;
 }
 
 h2 {
@@ -88,9 +86,11 @@ h2 {
           text-emphasis: initial;
   font-family: "Roboto";
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-color: #f9cab1;
+  box-shadow: 0px 0px 10px black;
 }
 
 /*---------------------- FIN TITULOS ----------------------*/
@@ -107,13 +107,11 @@ body {
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: center;
-  background-color: cornsilk;
   border-radius: 10px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   color: black;
-  border: #d6b7a5 1px solid;
   border-radius: 70px;
   height: 50px;
 }
@@ -149,16 +147,15 @@ body {
   justify-content: center;
 }
 
+.imagen-inicio:hover {
+  transform: scale(103%, 103%);
+  transition-duration: 0.8s;
+}
+
 .grande {
   background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
   background-size: cover;
   grid-area: grande;
-}
-
-.grande:hover {
-  border-radius: 30px;
-  transform: scale(105%, 105%);
-  transition-duration: 1s;
 }
 
 .chica1 {
@@ -233,13 +230,26 @@ body {
   gap: 10px;
 }
 
+.card-group{
+  gap:5px;
+}
 .card {
   --bs-card-bg:#fff8dc;
+}
+
+.card-group:hover{
+  transform: scale(101%, 101%);
+  transition-duration: 0.8s;
+  box-shadow: 0px 0px 10px black;
 }
 
 .card-title {
   font-size: xx-large;
   font-weight: bold;
+}
+
+.card-body{
+  background-color: beige;
 }
 
 .tiny-cakes {
@@ -303,15 +313,22 @@ body {
   display: flex;
 }
 
+.card-izq:hover, .card-der:hover{
+  transform: scale(101%, 101%);
+  transition-duration: 0.8s;
+  box-shadow: 0px 0px 10px black;
+}
+
 .btn-primary {
   font-size: x-large;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  color: black;
-  background-color: rgba(254, 122, 152, 0.81);
-  border-color: white;
-  --bs-btn-hover-bg:rgba(255,206,134,1);
-  --bs-btn-hover-border-color:yellow;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: black;
+    background-color: #d6b7a5;
+    border-color: white;
+    --bs-btn-hover-bg: #e6dbd5;
+    --bs-btn-hover-border-color: #d6b7a5;
+    --bs-btn-hover-color:white;
 }
 
 .boxes-fechas-especiales {
@@ -332,19 +349,34 @@ body {
   width: 500px;
   border-radius: 10px;
 }
-
+.contenedor-boton-fechas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*----------------------  FIN FECHAS ESPECIALES ----------------------*/
 /*-------------  CONTACTO -------------*/
+.container-fluid-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(64.3deg, rgb(214 183 165) 17.7%, rgb(255, 206, 134) 64.7%, rgb(230 219 213) 112.1%);
+  background-color: #e6dbd5;
   background-size: auto;
   background-position: center;
   background-attachment: fixed; /*la imagen del fondo se mantiene fija minetras se scrollea*/
   font-family: "Roboto";
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px black;
+  width: 50%;
   
 }
 
@@ -352,21 +384,46 @@ body {
   background-color: rgba(240, 138, 54, 0.7411764706);
   border-radius: 20px;
   padding: 10px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
-/* .boton{
-    background-color: black;
-    font-family: 'calibri';
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50px;
-} */
+
 /*------------- FIN CONTACTO -------------*/
 /*-------------  NOSOTROS -------------*/
-.nosotros {
-  background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgb(255, 206, 134) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  display: flex;
+
+}
+.p-nosotros{
+  font-size: 40px;
+  font-family:inherit;
+  font-weight: bold;
+}
+
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+.card{
+  --bs-card-bg:#e6dbd5;
+}
+.card-title-nosotros{
+  font-size: 45px;
+  font-weight: bold;
+}
+.card-text-nosotros{
+  font-size: 30px;
+}
+.card-body-nosotros{
+  background-color: #e6dbd5;
+}
+
+.g-0{
+  box-shadow: 0px 0px 10px black;
 }
 
 /*------------- FIN NOSOTROS -------------*/
@@ -431,7 +488,7 @@ body {
  
   
   /* FIN INICIO */
-  /*PRODUCTOS RESPONSIVE*/
+  /*PRODUCTOS - RESPONSIVE*/
 
   .productos {
     display: flex;
@@ -477,6 +534,15 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
+
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+
+
+
   /* FIN PRODUCTOS*/
   /*FECHAS ESPECIALES RESPONSIVE*/
   
@@ -501,10 +567,27 @@ body {
   .cartas-fechas{
     flex-direction: column;
   }
+
+ 
 }
+
   /* FIN FECHAS ESPECIALES*/
-  /*NOSOTROS*/
-  /*FIN NOSOTROS*/
+
+  /*CONTACTO RESPONSIVE*/
+.formulario{
+  width: 90%;
+}
+  /*FIN CONTACTO RESPONSIVE*/
+
+
+
+  /*NOSOTROS RESPONSIVE*/
+
+  .card-nosotros{
+    width: 100%;
+    background-color: #e6dbd5;
+  }
+  /*FIN NOSOTROS RESPONSIVE*/
 
 /*************MOVIL 320px ***********/
 @media (max-width: 320px)

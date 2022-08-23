@@ -7,8 +7,10 @@
 $font-titulo:(
     color:black,
     tFuente: 50px,
-    color-fondo:$colorPrincipal,
+    color-fondo:$colorTitulos,
 );
+
+
 
 //Mixins
 @mixin fondoImagen(){
