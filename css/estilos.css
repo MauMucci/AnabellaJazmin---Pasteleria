@@ -23,6 +23,11 @@ h1 {
 
 /*----------------------  FIN SELECTOR UNIVERSAL ----------------------*/
 /*----------------------  HEADER ----------------------*/
+.cabecera{
+  display: flex;
+  justify-content: center;
+}
+
 a {
   display: flex;
   justify-content: center;
@@ -159,7 +164,7 @@ body {
 }
 
 .chica1 {
-  background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
+  background-image: url(../);
   background-size: cover;
   grid-area: chico1;
   transition: all 2s;
@@ -170,7 +175,7 @@ body {
 }
 
 .chica2 {
-  background-image: url(../Imagenes/Productos/Chocotorta-con-franui-edit.jpeg);
+  background-image: url(../Imagenes/Productos/Torre-edit.jpeg);
   background-size: cover;
   grid-area: chico2;
 }
