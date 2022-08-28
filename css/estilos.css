@@ -20,7 +20,9 @@ h1 {
   margin: 0;
   padding: 0;
 }
-
+ul{
+  padding-left:0px; 
+}
 /*----------------------  FIN SELECTOR UNIVERSAL ----------------------*/
 /*----------------------  HEADER ----------------------*/
 .cabecera{
@@ -158,13 +160,13 @@ body {
 }
 
 .grande {
-  background-image: url(../Imagenes/Productos/box-4-edit.jpeg);
+  background-image: url(../Imagenes/Productos/chocotorta-con-franui-2-edit.jpeg);
   background-size: cover;
   grid-area: grande;
 }
 
 .chica1 {
-  background-image: url(../);
+  background-image: url(../Imagenes/Productos/pabloba-tiny-2-edit.jpeg);
   background-size: cover;
   grid-area: chico1;
   transition: all 2s;
@@ -458,6 +460,11 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 5px;
 }
+/* 
+#footer ul{
+  color: red;
+  margin-left
+} */
 
 #footer h6 {
   padding: 10px;
