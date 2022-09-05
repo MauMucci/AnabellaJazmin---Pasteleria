@@ -493,7 +493,7 @@ body {
     margin-left: 10%;
   }
   .grande,.chica1,.chica2 {
-    height: 600px;
+    height: 300px;
     width: 100%;
     margin-bottom: 10px;
   }
@@ -587,7 +587,14 @@ body {
 
   /*CONTACTO RESPONSIVE*/
 .formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   width: 90%;
+}
+
+textarea{
+  width: 100%;
 }
   /*FIN CONTACTO RESPONSIVE*/
 
